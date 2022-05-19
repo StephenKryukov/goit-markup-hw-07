@@ -7,7 +7,7 @@
 			@extend %container;
 		}
 
-	&__heading {
+	&__title {
 			@extend %container__title;
 		}
 
@@ -41,7 +41,7 @@
 		margin-bottom: 10px;
 	}
 
-	&__title {
+	&__job {
 		font-size: 16px;
 		line-height: 1.19;
 		color: $secondary-text-color;

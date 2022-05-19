@@ -19,13 +19,13 @@
 				<a href="./index.html" class="logo">Web<span class="logo__studio">Studio</span></a>
 				<ul class="header__list">
 					<li class="header__item">
-						<a href="./index.html" class="header__title">Студия</a>
+						<a href="./index.html" class="header__name">Студия</a>
 					</li>
 					<li class="header__item">
-						<a href="./portfolio.html" class="header__title header__title--current">Портфолио</a>
+						<a href="./portfolio.html" class="header__name header__name--current">Портфолио</a>
 					</li>
 					<li class="header__item">
-						<a href="/" class="header__title">Контакты</a>
+						<a href="/" class="header__name">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -53,16 +53,16 @@
 		<!-- Кнопки + Портфолио -->
 		<section class="portfolio">
 			<div class="portfolio__container">
-				<h1 class="portfolio__heading">Портфолио</h1>
+				<h1 class="portfolio__title">Портфолио</h1>
 					<ul class="dashboard">
-						<li class="dashboard__list"><button type="button" class="dashboard__button dashboard__button--current">Все</button></li>
-						<li class="dashboard__list"><button type="button" class="dashboard__button">Веб-сайты</button></li>
-						<li class="dashboard__list"><button type="button" class="dashboard__button">Приложения</button></li>
-						<li class="dashboard__list"><button type="button" class="dashboard__button">Дизайн</button></li>
-						<li class="dashboard__list"><button type="button" class="dashboard__button">Маркетинг</button></li>
+						<li class="dashboard__item"><button type="button" class="dashboard__button dashboard__button--current">Все</button></li>
+						<li class="dashboard__item"><button type="button" class="dashboard__button">Веб-сайты</button></li>
+						<li class="dashboard__item"><button type="button" class="dashboard__button">Приложения</button></li>
+						<li class="dashboard__item"><button type="button" class="dashboard__button">Дизайн</button></li>
+						<li class="dashboard__item"><button type="button" class="dashboard__button">Маркетинг</button></li>
 					</ul>
-					<ul class="dashboard gallery">
-						<li class="gallery__list">
+					<ul class="gallery">
+						<li class="gallery__item">
 							<a href="/" class="gallery__link">
 								<div class="gallery__overlay--visible">
 									<img src="./images/portfolio-images/img-21.jpg" alt="Веб-сайт о технике" width="370" height="294">
@@ -77,7 +77,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="gallery__list">
+						<li class="gallery__item">
 							<a href="/" class="gallery__link">
 								<div class="gallery__overlay--visible">
 									<img src="./images/portfolio-images/img-22.jpg" alt="Постер" width="370" height="294">
@@ -93,7 +93,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="gallery__list">
+						<li class="gallery__item">
 							<a href="/" class="gallery__link">
 								<div class="gallery__overlay--visible">
 									<img src="./images/portfolio-images/img-23.jpg" alt="Ресторан" width="370" height="294">
@@ -109,7 +109,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="gallery__list">
+						<li class="gallery__item">
 							<a href="/" class="gallery__link">
 								<div class="gallery__overlay--visible">
 									<img src="./images/portfolio-images/img-24.jpg" alt="Проект Prime" width="370" height="294">
@@ -125,7 +125,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="gallery__list">
+						<li class="gallery__item">
 							<a href="/" class="gallery__link">
 								<div class="gallery__overlay--visible">
 									<img src="./images/portfolio-images/img-25.jpg" alt="Проект Boxes" width="370" height="294">
@@ -141,7 +141,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="gallery__list">
+						<li class="gallery__item">
 							<a href="/" class="gallery__link">
 								<div class="gallery__overlay--visible">
 									<img src="./images/portfolio-images/img-26.jpg" alt="Веб-сайт о вдохновении" width="370" height="294">
@@ -157,7 +157,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="gallery__list">
+						<li class="gallery__item">
 							<a href="/" class="gallery__link">
 								<div class="gallery__overlay--visible">
 									<img src="./images/portfolio-images/img-27.jpg" alt="Издание Limited Edition" width="370" height="294">
@@ -173,7 +173,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="gallery__list">
+						<li class="gallery__item">
 							<a href="/" class="gallery__link">
 								<div class="gallery__overlay--visible">
 									<img src="./images/portfolio-images/img-28.jpg" alt="Проект LAB" width="370" height="294">
@@ -189,7 +189,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="gallery__list">
+						<li class="gallery__item">
 							<a href="/" class="gallery__link">
 								<div class="gallery__overlay--visible">
 									<img src="./images/portfolio-images/img-29.jpg" alt="Приложение о бизнесе" width="370" height="294">
@@ -213,8 +213,8 @@
 	<!-- Футер -->
 	<footer class="footer">
 		<div class="footer__container">
-			<ul class="footer__ul">
-				<li class="footer__list">
+			<ul class="footer__list">
+				<li class="footer__object">
 					<a href="./index.html" class="logo logo__footer">Web<span class="logo__studio--white">Studio</span></a>
 					<address>
 						<ul class="footer__unit">
@@ -266,8 +266,8 @@
 					</ul>
 				</li>
 				<li>
-					<div class="footer__subscribe subscribe">
-						<h3 class="footer__join">Подпишитесь на рассылку</h3>
+					<div class="subscribe">
+						<h3 class="subscribe__join">Подпишитесь на рассылку</h3>
 						<form class="subscribe__form">
 							<label for="email"></label>
 							<input class="subscribe__window" type="email" name="mail" id="email" placeholder="E-mail" />

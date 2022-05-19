@@ -9,7 +9,7 @@
 			@extend %container;
 		}
 
-	&__ul {
+	&__list {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 0;
@@ -17,7 +17,7 @@
 	padding-left: 0;
 	}
 
-	&__list {
+	&__object {
 		width: 231px;
 		margin-right: 70px;
 	}
@@ -73,6 +73,10 @@
 .subscribe {
 	margin-left: 93px;
 
+	&__join {
+		@extend .footer__join;
+	}
+	
 	&__form {
 		display: flex;
 		align-items: center;

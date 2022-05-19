@@ -44,7 +44,7 @@
 		margin-left: 30px;
 	}
 
-	&__title,
+	&__name,
 	&__link {
 		display: flex;
 		flex-direction: row;
@@ -57,12 +57,12 @@
 		color: $primary-text-color;
 	}
 
-	&__title--current {
+	&__name--current {
 		position: relative;
 		color: $accent-color;
 	}
 
-	&__title--current::after {
+	&__name--current::after {
 		display: block;
 		position: absolute;
 		top: 76px;
@@ -83,8 +83,8 @@
 		fill: currentColor;
 	}
 
-	&__title:hover,
-	&__title:focus,
+	&__name:hover,
+	&__name:focus,
 	&__link:hover,
 	&__link:focus {
 		color: $accent-color;

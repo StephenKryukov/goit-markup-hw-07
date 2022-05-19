@@ -7,12 +7,12 @@
 		@extend %container;
 	}
 
-	&__heading {
+	&__title {
 		@extend %container__title;
 		@extend %visually-hidden;
 	}
 	
-	&__pictures {
+	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -22,15 +22,15 @@
 		margin-bottom: 30px;
 	}
 
-	&__list {
+	&__item {
 		margin-right: 30px;
 	}
 
-	&__list:nth-last-child(-n + 1) {
+	&__item:nth-last-child(-n + 1) {
 		margin-right: 0px;
 	}
 
-	&__area {
+	&__link {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -44,8 +44,8 @@
 		border: none;
 	}
 
-	&__area:hover,
-	&__area:focus {
+	&__link:hover,
+	&__link:focus {
 		color: $accent-color;
 		transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
@@ -71,7 +71,7 @@
 		margin-right: 0;
 	}
 
-	&__title {
+	&__heading {
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 1.14;
