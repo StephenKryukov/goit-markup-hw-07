@@ -16,18 +16,18 @@ a {
 	max-width: 100%;
 	text-decoration: none;
 }
-.section {
+%section {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
-.container {
+%container {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.container__title {
+%container__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -35,7 +35,7 @@ a {
 	margin-top: 0;
 	margin-bottom: 50px;
 }
-.visually-hidden {
+%visually-hidden {
 	position: absolute;
 	width: 1px;
 	height: 1px;

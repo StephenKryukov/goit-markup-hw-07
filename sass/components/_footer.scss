@@ -1,17 +1,21 @@
 /* Футер */
-footer {
+
+.footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: #2F303A;
-}
 
-.footer {
+	&__container {
+			@extend %container;
+		}
+
+	&__ul {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
-
+	}
 
 	&__list {
 		width: 231px;

@@ -1,6 +1,15 @@
 /* Наша команда */
 .team {
+	@extend %section;
 	background-color: $background-grey-color;
+
+	&__container {
+			@extend %container;
+		}
+
+	&__heading {
+			@extend %container__title;
+		}
 
 	&__list {
 		display: flex;

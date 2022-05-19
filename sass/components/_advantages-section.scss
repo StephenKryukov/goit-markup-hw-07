@@ -1,7 +1,17 @@
 /* Преимущества */
 
 .advantages {
+	@extend %section;
 
+	&__container {
+		@extend %container;
+	}
+
+	&__heading {
+		@extend %container__title;
+		@extend %visually-hidden;
+	}
+	
 	&__pictures {
 		display: flex;
 		flex-wrap: wrap;

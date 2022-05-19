@@ -1,4 +1,16 @@
 /* Портфолио-кнопки + картинки */
+.portfolio {
+	@extend %section;
+
+	&__container {
+		@extend %container;
+		}
+
+	&__heading {
+		@extend %container__title;
+		@extend %visually-hidden;
+	}
+}
 .dashboard {
 	display: flex;
 	flex-wrap: wrap;
@@ -49,7 +61,7 @@
 	}
 }
 
-.portfolio {
+.gallery {
 	margin-bottom: 0;
 
 	&__list {

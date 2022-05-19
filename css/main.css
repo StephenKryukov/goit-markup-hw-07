@@ -20,12 +20,12 @@ a {
   text-decoration: none;
 }
 
-.section {
+.hero, .advantages, .about, .team, .clients, .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.container {
+.header__container, .advantages__container, .about__container, .team__container, .clients__container, .portfolio__container, .footer__container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -33,7 +33,7 @@ a {
   padding-right: 15px;
 }
 
-.container__title {
+.advantages__heading, .about__heading, .team__heading, .clients__heading, .portfolio__heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -42,7 +42,7 @@ a {
   margin-bottom: 50px;
 }
 
-.visually-hidden {
+.advantages__heading, .portfolio__heading {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -81,6 +81,19 @@ a {
 
 /* Шапка сайта */
 .header {
+  display: block;
+}
+
+.header::after {
+  display: block;
+  position: absolute;
+  top: 79px;
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,15 +183,6 @@ a {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-header::after {
-  display: block;
-  position: absolute;
-  top: 79px;
-  content: "";
-  width: 100%;
-  border-bottom: 1px solid #ECECEC;
 }
 
 /* Герой */
@@ -479,7 +483,7 @@ header::after {
 }
 
 /* Постоянные клиенты */
-.clients {
+.clients__unit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,11 +877,11 @@ header::after {
   margin-right: 0;
 }
 
-.portfolio {
+.gallery {
   margin-bottom: 0;
 }
 
-.portfolio__list {
+.gallery__list {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -886,15 +890,15 @@ header::after {
   outline: 1px solid #ffffff;
 }
 
-.portfolio__list:nth-child(3n) {
+.gallery__list:nth-child(3n) {
   margin-right: 0;
 }
 
-.portfolio__list:nth-last-child(-n + 3) {
+.gallery__list:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.portfolio__list:hover, .portfolio__list:focus {
+.gallery__list:hover, .gallery__list:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   -webkit-transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -903,7 +907,7 @@ header::after {
   transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__link:hover .portfolio__overlay--blue {
+.gallery__link:hover .gallery__overlay--blue {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 0.9;
@@ -913,12 +917,12 @@ header::after {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__overlay--visible {
+.gallery__overlay--visible {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio__overlay--blue {
+.gallery__overlay--blue {
   display: block;
   position: absolute;
   width: 370px;
@@ -932,7 +936,7 @@ header::after {
           transform: translateY(100%);
 }
 
-.portfolio__text {
+.gallery__text {
   display: block;
   width: 322px;
   height: 168px;
@@ -942,7 +946,7 @@ header::after {
   color: #ffffff;
 }
 
-.portfolio__unit {
+.gallery__unit {
   width: 322px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -950,7 +954,7 @@ header::after {
   margin-right: auto;
 }
 
-.portfolio__title {
+.gallery__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -960,7 +964,7 @@ header::after {
   color: #212121;
 }
 
-.portfolio__description {
+.gallery__description {
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
@@ -969,13 +973,13 @@ header::after {
 }
 
 /* Футер */
-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2F303A;
 }
 
-.footer {
+.footer__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

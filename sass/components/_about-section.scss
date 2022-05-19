@@ -1,7 +1,16 @@
 /* Чем мы занимаемся */
 .about {
+	@extend %section;
 	padding-top: 0;
+	
+	&__container {
+			@extend %container;
+		}
 
+		&__heading {
+			@extend %container__title;
+		}
+	
 	&__list {
 		display: flex;
 		flex-wrap: wrap;

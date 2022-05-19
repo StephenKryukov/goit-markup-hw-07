@@ -1,13 +1,24 @@
 /* Постоянные клиенты */
 .clients {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding-left: 0;
-	padding-right: 0;
-	margin-top: 0;
-	margin-bottom: 0;
+	@extend %section;
 
+	&__container {
+		@extend %container;
+	}
+
+	&__heading {
+		@extend %container__title;
+	}
+	
+	&__unit {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-left: 0;
+		padding-right: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 
 	&__list {
 		margin-right: 30px;
