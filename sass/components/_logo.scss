@@ -15,6 +15,7 @@
 	color: $primary-white-color;
 }
 	&__footer {
+	@extend .logo;
 	margin-bottom: 20px;
 }
 }

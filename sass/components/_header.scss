@@ -58,6 +58,7 @@
 	}
 
 	&__name--current {
+		@extend .header__name;
 		position: relative;
 		color: $accent-color;
 	}

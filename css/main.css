@@ -57,7 +57,7 @@ a {
 }
 
 /* Лого */
-.logo {
+.logo, .logo__footer {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -134,7 +134,7 @@ a {
   margin-left: 30px;
 }
 
-.header__name, .header__link {
+.header__name, .header__name--current, .header__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,7 +177,7 @@ a {
   fill: currentColor;
 }
 
-.header__name:hover, .header__name:focus, .header__link:hover, .header__link:focus {
+.header__name:hover, .header__name--current:hover, .header__name:focus, .header__name--current:focus, .header__link:hover, .header__link:focus {
   color: #2196F3;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -447,7 +447,7 @@ a {
   margin-right: 0px;
 }
 
-.social__button {
+.social__button, .social__button--grey {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,7 +469,7 @@ a {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.social__button:hover, .social__button:focus {
+.social__button:hover, .social__button--grey:hover, .social__button:focus, .social__button--grey:focus {
   color: #ffffff;
   background-color: #2196F3;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -838,7 +838,7 @@ a {
   margin-right: auto;
 }
 
-.dashboard__button {
+.dashboard__button, .dashboard__button--current {
   font-family: inherit;
   background: #F5F4FA;
   border-radius: 4px;
@@ -851,7 +851,7 @@ a {
   padding: 6px 22px;
 }
 
-.dashboard__button:hover, .dashboard__button:focus {
+.dashboard__button:hover, .dashboard__button--current:hover, .dashboard__button:focus, .dashboard__button--current:focus {
   background: #2196F3;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);

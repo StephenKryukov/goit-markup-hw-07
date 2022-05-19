@@ -27,6 +27,7 @@
 	}
 
 	&__button--grey {
+		@extend .social__button;
 		color: $primary-white-color;
 		background: rgba(255, 255, 255, 0.1);
 	}
